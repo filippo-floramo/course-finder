@@ -10,9 +10,10 @@ const app = express();
 
 //creating middleware & static files
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
    return res.status(200).json({
       title: "Express Testing",
       message: "The app is working properly!",
