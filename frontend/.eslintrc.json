@@ -18,5 +18,14 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "semi": 1,
+        "import/no-unresolved": [
+          0,
+          {
+            "caseSensitive": true
+          }
+        ],
+        "import/extensions": 0,
+        "no-console": 0
     }
 }
