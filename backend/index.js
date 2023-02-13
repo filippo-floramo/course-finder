@@ -10,6 +10,7 @@ const app = express();
 
 //creating middleware & static files
 app.use(express.urlencoded({ extended: true }));
+//app.use(express.json());
 
 
 app.get('/', async (req, res) => {
