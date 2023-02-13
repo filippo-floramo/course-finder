@@ -21,7 +21,7 @@ export function App() {
           count is {count}
         </button>
         <p>
-          Edit <code>{import.meta.env.VITE_LOL}</code> and save to test HMR
+          Edit <code>{import.meta.env.VITE_LOL}</code> and 
         </p>
       </div>
       <p class="read-the-docs">
