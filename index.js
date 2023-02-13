@@ -16,10 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.get('/', (req, res) => {
-   return res.status(200).json({
-      title: "Express Testing",
-      message: "The app is working properly!",
-    });
+   return res.render('index')
 })
 
 app.listen(port, () => {
