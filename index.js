@@ -6,12 +6,12 @@ const app = express();
 
 // register view engine
 app.set('view engine', 'ejs');
-app.set('views', 'src/views');
+//app.set('views', 'views');
 
 
 //creating middleware & static files
 
-app.use(express.static('src/public'));
+app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
 
