@@ -10,7 +10,7 @@ const app = express();
 
 //creating middleware & static files
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+//app.use(express.json());
 
 
 app.get('/', async (req, res) => {
@@ -23,5 +23,3 @@ app.get('/', async (req, res) => {
 app.listen(port, () => {
    console.log("ready on port", port);
 })
-
-module.exports = app
