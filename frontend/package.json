@@ -10,7 +10,8 @@
     "lint": "eslint . --ext .ts,.tsx"
   },
   "dependencies": {
-    "preact": "^10.11.3"
+    "preact": "^10.11.3",
+    "react-router-dom": "^6.8.1"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.5.0",

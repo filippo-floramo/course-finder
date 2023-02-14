@@ -1,0 +1,29 @@
+.courses {
+
+   .single {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 40px 0;
+      padding-left: 30px;
+      border-left: 6px solid crimson;
+
+      .course-type {
+         color: #777;
+      }
+
+      .university {
+         margin-top: 5px;
+      }
+
+      .icons {
+         a {
+            margin-right: 10px;
+            cursor: pointer;
+         }
+      }
+   }
+}
+
+
+/* details styles */
