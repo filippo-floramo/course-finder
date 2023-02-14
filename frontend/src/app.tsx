@@ -1,7 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
-import Create from './pages/Create';
+import CreateCourse from './pages/CreateCourse';
 import Navbar from './components/Navbar';
+import Universities from "./pages/Universities";
+import CourseTypes from "./pages/CourseTypes";
 import "./assets/styles/app.scss";
 
 export function App() {
@@ -10,8 +12,10 @@ export function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path='/create' element={<Create />} />
         <Route path='/' element={<Home />} />
+        <Route path='/create-course' element={<CreateCourse />} />
+        <Route path='/universities' element={<Universities />} />
+        <Route path='/course-types' element={<CourseTypes />} />
       </Routes>
     </>
   );

@@ -1,0 +1,50 @@
+.main-list {
+
+   .description {
+      display: flex;
+      justify-content: space-between;
+      a {
+         cursor: pointer;
+         border-bottom: 1px solid black;
+      }
+   }
+
+   .single {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 40px 0;
+      padding-left: 30px;
+      border-left: 6px solid crimson;
+      border-radius: 4px;
+
+      .course-type {
+         color: #777;
+      }
+
+      .university {
+         margin-top: 5px;
+      }
+
+      .icons {
+         a {
+            display: inline-block;
+            border: 2px solid crimson;
+            border-radius: 2px;
+            padding: 6px;
+            margin-right: 10px;
+            cursor: pointer;
+         }
+      }
+   }
+   .universities {
+      border-bottom: 1px solid crimson;
+      border-left: none;
+      border-radius: 0;
+      padding-top: 6px;
+      padding-bottom: 6px;
+   }
+}
+
+
+/* details styles */

@@ -6,9 +6,9 @@ function Navbar() {
             <p>A course finder</p>
          </div>
          <ul>
-            <li><a href="/">Create Course</a></li>
-            <li><a href="/">Atenei</a></li>
-            <li><a href="/">Tipologia Corsi</a></li>
+            <li><a href="/universities">Atenei</a></li>
+            <li><a href="/course-types">Tipologia Corsi</a></li>
+            <li><a href="/create-course">Create Course</a></li>
          </ul>
       </nav>
    );
