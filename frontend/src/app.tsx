@@ -1,8 +1,26 @@
-import { useState } from 'preact/hooks';
+import { useEffect, useState } from 'preact/hooks';
 import preactLogo from './assets/preact.svg';
 import './app.scss';
 
 export function App() {
+
+  const fetchData = async () => {
+    const res = await fetch("http://localhost:3001/api", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      }
+    });
+    const data = await res.json();
+    console.log(data);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+
   const [count, setCount] = useState(0);
 
   return (
@@ -21,7 +39,7 @@ export function App() {
           count is {count}
         </button>
         <p>
-          Edit <code>{import.meta.env.VITE_LOL}</code> and 
+          Edit <code>{import.meta.env.VITE_LOL}</code> and
         </p>
       </div>
       <p class="read-the-docs">
